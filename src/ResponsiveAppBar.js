@@ -2,21 +2,10 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import mpgLogo from './mpgLogoV2SquaredShadowed.png'
-import { Popover } from '@mui/material';
 
-const pages = ['HOME', 'ABOUT'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -33,14 +22,13 @@ const ResponsiveAppBar = () => {
       );
     } else if (event.currentTarget.id == "GAMES") {
       console.log("/games..");
-      // this.props.history.push('/games')
       anchor = (event.target.ownerDocument || document).querySelector(
         "#games"
       );
-    } else if (event.currentTarget.id == "ABOUT") {
-      anchor = (event.target.ownerDocument || document).querySelector(
-        "#about"
-      );
+    // } else if (event.currentTarget.id == "about") {
+    //   anchor = (event.target.ownerDocument || document).querySelector(
+    //     "#about"
+    //   );
     } else if (event.currentTarget.id == "TRAITS") {
       alert("Coming soon!");
     }
@@ -86,17 +74,24 @@ const ResponsiveAppBar = () => {
           <img style={{height: 48, width: 56, paddingRight: 8 }} src={mpgLogo}></img>
           <div/>
           <Box sx={{ justifyContent: "flex-end", flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                id={page}
-                key={page}
+            <Button
+              id="home"
+              key="home"
                 onClick={handleNavMenu}
-                href="/"
-                sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
-              >
-                {page}
-              </Button>
-            ))}
+              href="/"
+              sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
+            >
+              HOME
+            </Button>
+            {/* <Button
+              id="about"
+              key="about"
+                onClick={handleNavMenu}
+              href="/#about"
+              sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
+            >
+              ABOUT
+            </Button> */}
             <Button
               id="realestate"
               key="realestate"
