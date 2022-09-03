@@ -16,6 +16,8 @@ import discordLogo from './discordLogo.png';
 import twitterLogo from './twitterLogo.png';
 import { Avatar, Stack } from "@mui/material";
 import { sizeHeight } from "@mui/system";
+import astronautAvatar from './astronaut02.png';
+import pdAvatar from './pdAvatar.png';
 
 const About = () => {
   const theme = useTheme();
@@ -25,7 +27,7 @@ const About = () => {
       <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">ABOUT</Typography>
       <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-evenly', marginBottom: "3rem"}}>
           <Stack>
-            <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={aaaAvatarTheGeneral} />
+            <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={astronautAvatar} />
             <Card sx={{my: 2, mr: 0, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Jeff
@@ -42,7 +44,7 @@ const About = () => {
             </Card>
           </Stack>
           <Stack>
-            <Avatar sx={{width: 128, height: 128}} src={aaaAvatarBillyJim} />
+            <Avatar sx={{width: 128, height: 128}} src={pdAvatar} />
             <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   PD
