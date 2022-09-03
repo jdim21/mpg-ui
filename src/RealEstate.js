@@ -3,7 +3,6 @@ import './RealEstate.css';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import { Box, Card, CardActions, Typography, Button, Stack, Paper, CssBaseline, CardContent } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import wagBannerGif from './wagBannerGif.gif';
 import mpgBanner from './mpgBanner.png';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './AaaTheme';

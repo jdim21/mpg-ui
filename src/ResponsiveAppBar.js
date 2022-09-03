@@ -12,11 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import aaaLogo from './aaaLogo.png'
 import mpgLogo from './mpgLogoV2SquaredShadowed.png'
 import { Popover } from '@mui/material';
-// import { ThemeProvider } from '@mui/material';
-// import theme from './AaaTheme';
 
 const pages = ['HOME', 'ABOUT'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

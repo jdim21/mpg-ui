@@ -8,12 +8,6 @@ import Box from '@mui/material/Box';
 import { Button, Card } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import aaaAvatarBillyJim from './aaaAvatarBillyJim.png';
-import aaaAvatarTheGeneral from './aaaAvatarTheGeneral.png';
-import aaaAvatarHoyt from './aaaAvatarHoyt.png';
-import aaaAvatarIntern from './aaaAvatarIntern.png';
-import discordLogo from './discordLogo.png';
-import twitterLogo from './twitterLogo.png';
 import { Avatar, Stack } from "@mui/material";
 import { sizeHeight } from "@mui/system";
 import astronautAvatar from './astronaut02.png';
@@ -38,10 +32,6 @@ const About = () => {
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
                 <br/>
-                {/* <a href="https://discordapp.com/users/1008504367160238270">
-                  <img width="24" height="24" src={discordLogo}>
-                  </img>
-                </a> */}
               </Box>
             </Card>
           </Stack>

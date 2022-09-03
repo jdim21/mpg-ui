@@ -3,7 +3,6 @@ import './App.css';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import { Box, Stack, Paper, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import wagBannerGif from './wagBannerGif.gif';
 import mpgBanner from './mpgBanner.png';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './AaaTheme';
@@ -29,7 +28,6 @@ function App() {
       <ResponsiveAppBar></ResponsiveAppBar>
       <Box sx={{ width: '100%' }}>
         <Stack spacing={0}>
-          {/* <img ref={ref} id={"home"} className="imgFullWidth" src={wagBannerGif}> */}
           <img ref={ref} id={"home"} className="imgFullWidth" src={mpgBanner}>
           </img>
           <Vision></Vision>
