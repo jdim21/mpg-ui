@@ -5,7 +5,7 @@ import { CssBaseline, Typography } from "@mui/material";
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import { Card } from "@mui/material";
+import { Button, Card } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import aaaAvatarBillyJim from './aaaAvatarBillyJim.png';
@@ -18,6 +18,7 @@ import { Avatar, Stack } from "@mui/material";
 import { sizeHeight } from "@mui/system";
 import astronautAvatar from './astronaut02.png';
 import pdAvatar from './pdAvatar.png';
+import EmailIcon from '@mui/icons-material/Email';
 
 const About = () => {
   const theme = useTheme();
@@ -36,6 +37,7 @@ const About = () => {
                   Investor, Software Engineer, Gamer
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
+                <br/>
                 {/* <a href="https://discordapp.com/users/1008504367160238270">
                   <img width="24" height="24" src={discordLogo}>
                   </img>
@@ -57,6 +59,14 @@ const About = () => {
               </Box>
             </Card>
           </Stack>
+      </div>
+      <div>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="primary" href="mailto:mashedpotatogroup@gmail.com" sx={{mb: 2}}>
+        <Typography color="white" sx={{pr: 2}} fontWeight="bold">
+         Contact Us 
+        </Typography>
+        <EmailIcon></EmailIcon>
+      </Button>
       </div>
     </div>);
 }
