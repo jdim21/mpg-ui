@@ -18,7 +18,7 @@ import { Popover } from '@mui/material';
 // import { ThemeProvider } from '@mui/material';
 // import theme from './AaaTheme';
 
-const pages = ['HOME', 'GAMES', 'REAL ESTATE', 'ABOUT'];
+const pages = ['HOME', 'ABOUT'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -30,13 +30,15 @@ const ResponsiveAppBar = () => {
       anchor = (event.target.ownerDocument || document).querySelector(
         "#home"
       );
-    } else if (event.currentTarget.id == "GAMES") {
-      anchor = (event.target.ownerDocument || document).querySelector(
-        "#games"
-      );
     } else if (event.currentTarget.id == "REAL ESTATE") {
       anchor = (event.target.ownerDocument || document).querySelector(
         "#realestate"
+      );
+    } else if (event.currentTarget.id == "GAMES") {
+      console.log("/games..");
+      // this.props.history.push('/games')
+      anchor = (event.target.ownerDocument || document).querySelector(
+        "#games"
       );
     } else if (event.currentTarget.id == "ABOUT") {
       anchor = (event.target.ownerDocument || document).querySelector(
@@ -92,11 +94,28 @@ const ResponsiveAppBar = () => {
                 id={page}
                 key={page}
                 onClick={handleNavMenu}
+                href="/"
                 sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
               >
                 {page}
               </Button>
             ))}
+            <Button
+              id="realestate"
+              key="realestate"
+              href="/realestate"
+              sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
+            >
+              REAL ESTATE
+            </Button>
+            <Button
+              id="games"
+              key="games"
+              href="/games"
+              sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
+            >
+              GAMES
+            </Button>
           </Box>
 
         </Toolbar>
